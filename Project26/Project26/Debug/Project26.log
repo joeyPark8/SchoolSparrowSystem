@@ -1,0 +1,6 @@
+﻿  Sparrow.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\ostream(284,1): warning C4530: C++ 예외 처리기가 사용되었지만 해제 의미 체계가 활성화되지 않았습니다. /EHsc를 지정하십시오.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\ostream(269): message : 클래스 템플릿 멤버 함수 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'을(를) 컴파일하는 중입니다.
+C:\Users\USER\source\repos\Project26\Project26\Sparrow.h(98): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\ostream(641): message : 컴파일되는 클래스 템플릿 인스턴스화 'std::basic_ostream<char,std::char_traits<char>>'에 대한 참조를 확인하세요.
+  Project26.vcxproj -> C:\Users\USER\source\repos\Project26\Debug\Project26.exe
