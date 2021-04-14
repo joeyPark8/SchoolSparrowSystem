@@ -86,18 +86,25 @@ public:
 
 	void seeStudentList() {
 		int count = 0;
-		int lastTenPlace = NULL;
+		int index = 0;
 		string tip;
+		bool hasBeenChanged = false;
 		for (auto [num, name] : studentList) {
 			count += 1;
+			index += 1;
 			tip = (count % 2 == 0) ? ",\n" : ", ";
-			if (lastTenPlace != NULL) {
-				tip = ((int)num / 10 != lastTenPlace) ? "\n" : tip;
+			if (num != studentNumberList[studentNumberList.size() - 1]) {
+				tip = (num / 10 != studentNumberList[index] / 10) ? "\n" : tip;
+				if (num / 10 != studentNumberList[index] / 10) {
+					hasBeenChanged = true;
+				}
 			}
-			tip = (count == studentList.size()) ? "" : tip;
-			cout << "번호: " << num << " 이름: " << name << lastTenPlace << tip;
-
-			lastTenPlace = num / 10;
+			if (hasBeenChanged == true) {
+				count += 1;
+				hasBeenChanged = false;
+			}
+			tip = (index == studentList.size()) ? "" : tip;
+			cout << "번호: " << num << " 이름: " << name << tip;
 		}
 	}
 };
